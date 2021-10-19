@@ -1,9 +1,9 @@
 class Api::V1::QuestionsController < ApplicationController
+  before_action :authenticate_user!, only: :create
   before_action :set_question, only: [:show]
 
   def index
     @questions = Question.all
-    render json: @questions, status: :ok
   end
 
   def create
@@ -20,7 +20,11 @@ class Api::V1::QuestionsController < ApplicationController
 
   private
     def set_question
-      @question = Question.includes(:answers, :user).find(params[:id])
+      begin
+        @question = Question.includes(:answers, :user).find(params[:id])
+      rescue ActiveRecord::RecordNotFound
+        render json: "", status: :not_found
+      end
     end
 
     def question_params

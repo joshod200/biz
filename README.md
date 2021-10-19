@@ -1,24 +1,16 @@
-# README
+# Biz
+A questions and answers platform built with Ruby on rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built With
+* Ruby on Rails
+* Devise Token Auth
+* SQLite3
+* Rspec
+* Shoulda matchers
+* Factory bot
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Features
+* Create question
+* View all questions
+* Submit an answer to a question
+* View question and available answers
