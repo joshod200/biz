@@ -21,16 +21,16 @@ This repository contains a questions and answers application
 * Ruby 2.7
 * Rails 6
 
-### Backend
+### Clone
 
 * Clone repo
 * `cd <repository-path>`
 
-#### Install and migrate db
+### Install and migrate db
 * `bundle install`
 * `rails db:create`
 * `rails db:migrate`
 * `rails db:seed`
 
-#### Start Server
+### Start Server
 * `rails s -p 3001`
