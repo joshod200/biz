@@ -23,14 +23,20 @@ This repository contains a questions and answers application
 
 ### Clone
 
-* Clone repo
-* `cd <repository-path>`
+```bash
+git clone https://github.com/joshod200/biz_backend.git
+cd biz_backend
+```
 
 ### Install and migrate db
-* `bundle install`
-* `rails db:create`
-* `rails db:migrate`
-* `rails db:seed`
+```bash
+bundle install
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
 ### Start Server
-* `rails s -p 3001`
+```bash
+rails s -p 3001
+```
