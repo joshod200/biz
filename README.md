@@ -9,12 +9,6 @@ This repository contains a questions and answers application
 * Shoulda matchers
 * Factory bot
 
-## Features
-* Create question
-* View all questions
-* Submit an answer to a question
-* View question and available answers
-
 ## Setup
 
 ### Requirements
@@ -40,3 +34,9 @@ rails db:seed
 ```bash
 rails s -p 3001
 ```
+
+## Resources
+### Authentication
+|Resource| Description|
+|--------|------------|
+|POST /auth| Path to sign up|
